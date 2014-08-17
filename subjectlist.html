@@ -45,7 +45,7 @@
 	</style>
   </head>
   <body>
-    
+	
 	<div class="contain-to-grid sticky">
 		<nav class="top-bar" data-topbar data-options="sticky_on: large">
 			<ul class="title-area">
@@ -85,20 +85,40 @@
 			<p>
 				ด้านล่างจะเป็นรายการคอร์สที่เราเปิดสอน ท่านสามารถเลือกได้
 			</p>
+			<p>
+			
+			</p>
 		</div>
 		<div class="large-3 columns">
 			<img src="http://placehold.it/350x150&text=Ads">
 		</div>
 	</div>
 	
+	<div class="row">
+		<div class="large-12 columns">
+			<dl class="sub-nav THn">
+			  <dt class="THn">วิชา:</dt>
+			  <dd class="THn active"><a href="#BrE">English</a></dd>
+			  <dd class="THn"><a href="#AmE">American English</a></dd>
+			  <dd class="THn"><a href="#Chem">เคมี</a></dd>
+			  <dd class="THn"><a href="#Bio">ชีววิทยา</a></dd>
+			  <dd class="THn"><a href="#Maths">คณิตศาสตร์</a></dd>
+			  <dd class="THn"><a href="#Physics">ฟิสิกส์</a></dd>
+			  <dd class="THn"><a href="#Programming">การเขียนโปรแกรม</a></dd>
+			  <dd class="THn"><a href="#Thai">ภาษาไทย</a></dd>
+			</dl>
+		</div>
+	</div>
+	
+	
 	<script>
 		name = ["BrE", "AmE", "Chem", "Bio", "Maths", "Physics", "Programming", "Thai"];
-		subject = ["English", "American English", "เคมี", "ชีววิทยา", "คณิตศาสตร์", "ฟิสิกส์", "การเขียนโปรแกรม", "ไทย"];
+		subject = ["English", "American English", "เคมี", "ชีววิทยา", "คณิตศาสตร์", "ฟิสิกส์", "การเขียนโปรแกรม", "ภาษาไทย"];
 		img = ["UnionJR", "USFlag", "Chemistry", "Biology", "Maths", "Physics", "Programming", "Thai"];
 		var i, x;
 		for (i = 0; i < subject.length; i++) { 
 			document.write('<div class="row">');
-				document.write('<h3> <a name="' + name[i] + '">' + subject[i] + '</a></h3>');
+				document.write('<h3><a href="#" name="' + name[i] + '">' + subject[i] + '</a></h3>');
 				for (x = 0; x < 4; x++) {
 					document.write('<div class="large-3 columns">');
 						document.write('<ul class="pricing-table">');
@@ -112,6 +132,9 @@
 			document.write('</div>');
 		}
 	</script>
+	
+	
+
 	
 	<div class="row full-width" style="background-color: #263238;">
 		<div class="small-0 medium-1 large-1 columns">
@@ -157,6 +180,7 @@
 	
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+	
     <script>
       $(document).foundation();
     </script>
