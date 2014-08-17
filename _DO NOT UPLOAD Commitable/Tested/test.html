@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="css/font.css" />
+    <script src="js/vendor/modernizr.js"></script>
+	<style>
+	  .Roboto {
+	  font-family: Roboto, sans-serif;
+	  }
+	  .OpenSans {
+	  font-family: 'Open Sans', sans-serif;
+	  }
+	  .OpenSansL {
+	  font-family: 'Open Sans Light', sans-serif;
+	  }
+	  .Montserrat {
+	  font-family: Montserrat, sans-serif;
+	  }
+	  .row.full-width {
+		width: 100%;
+		max-width: 100%; 
+	  }
+	  .whiteColour {
+		color: #fdfdfd;
+	  }
+	  .blueColour {
+		color: #03a9f4;
+	  }
+	  body {
+	  -webkit-font-smoothing: antialiased;
+	  -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	  }
+	  h1, h2, h3, h4, h5, h6 {
+	  font-family: THnf, 'Noto Sans', 'Montserrat, sans-serif;
+	  }
+	  p {
+	  font-family: THnf, 'Noto Sans', 'Open Sans', sans-serif;
+	  //font-weight: 300;
+	  }
+	</style>
+  </head>
+  <body>
+    
+	
+	<script>
+		name = ["BrE", "AmE", "Chem", "Bio", "Maths", "Physics", "Thai"];
+		subject = ["English", "American English", "เคมี", "ชีววิทยา", "คณิตศาสตร์", "ฟิสิกส์", "ไทย"];
+		img = ["UnionJR", "USFlag", "Chemistry", "Microscope", "Maths", "Physics", "Thai"];
+		var i, x;
+		for (i = 0; i < subject.length; i++) { 
+			document.write('<div class="row">');
+				document.write('<h3> <a name="' + name[i] + '">' + subject[i] + '</a></h3>');
+				for (x = 0; x < 4; x++) {
+					document.write('<div class="large-3 columns">');
+						document.write('<ul class="pricing-table">');
+							document.write('<li class="title">Present Simple</li>');
+							document.write('<li class="price"><img src="img/' + img[i] + '.png" width="50%" /></li>');
+							document.write('<li class="description">£5</li>');
+							document.write('<li class="cta-button"><a class="button radius THn" href="#">เรียนเรื่องนี้</a></li>');
+						document.write('</ul>');
+					document.write('</div>');
+				}
+			document.write('</div>');
+		}
+	</script>
+
+	
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
