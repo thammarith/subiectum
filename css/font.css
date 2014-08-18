@@ -8,15 +8,32 @@
 	font-family: THnf, 'Noto Sans';
 	}
 @font-face {
-    font-family: THbf;
+    font-family: THnfB;
     src: url('font/NotoSansThai-Bold.ttf');
     font-weight: bold;
 }
-
-.THb {
-	font-family: THbf 'Noto Sans';
+.THnB {
+	font-family: THnfB, 'Noto Sans';
 	font-weight: bold;
 	}
+	
+@font-face {
+    font-family: THpf;
+    src: url('font/EDPenSook-NormalTone.ttf');
+}
+.THp {
+	font-family: THpf;
+	}
+@font-face {
+    font-family: THpfb;
+    src: url('font/EDPenSook-NormalToneBold.ttf');
+	font-weight: bold;
+}	
+.THpB {
+	font-family: THpfB;
+	font-weight: bold;
+	}
+	
 .Roboto {
 	font-family: Roboto, sans-serif;
 	}
@@ -45,9 +62,13 @@ body {
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	}
 h1, h2, h3, h4, h5, h6 {
-	font-family: THnf, Montserrat, sans-serif;
+	font-family: THpfb, THnf, 'Noto Sans', Montserrat, sans-serif;
 	}
 p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: THnf, 'Noto Sans', 'Open Sans', sans-serif;
 	//font-weight: 300;
 	}
+a.white {
+	color: #ffffff;
+	text-decoration: underline;
+}
